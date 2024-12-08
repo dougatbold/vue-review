@@ -12,14 +12,14 @@ const app = Vue.createApp({
     },
 
     // Original watcher
-    counter(value) {
-      if (value >= 37) {
-        const that = this;
-        setTimeout(function () {
-          that.counter = 0;
-        }, 5000);
-      }
-    },
+    // counter(value) {
+    //   if (value >= 37) {
+    //     const that = this;
+    //     setTimeout(function () {
+    //       that.counter = 0;
+    //     }, 5000);
+    //   }
+    // },
   },
   computed: {
     counterCheck() {

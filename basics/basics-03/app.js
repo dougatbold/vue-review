@@ -7,20 +7,20 @@ const app = Vue.createApp({
     };
   },
   methods: {
-    counterAdd(num) {
+    addCounter(num) {
       this.counter = this.counter + num;
     },
-    counterSubtract(num) {
+    minusCounter(num) {
       this.counter = this.counter - num;
     },
-    setName(e, lastName) {
-      this.name = e.target.value + ` ` + lastName;
+    setName(event, lastName) {
+      this.name = event.target.value + ` ` + lastName;
+    },
+    confirmName() {
+      this.confirmedName = this.name;
     },
     submitForm() {
       alert(`Submitted!`);
-    },
-    submittedName() {
-      this.confirmedName = this.name;
     },
   },
 });
